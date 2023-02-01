@@ -1,0 +1,9 @@
+Sistemul este alcatuit din cifrul bifid si substitutia monoalfabetica. 
+Substitutia a fost generata in asa fel incat literele I si J sa ramana neschimbate (adica I = I si J = J) pentru evitarea schimbarii mesajului la criptari/decriptari succesive; restul substitutiei a fost generata folosind random.shuffle;
+Patratul Polybius poate fi modificat prin introducerea unei chei in caseta "Enter key" si apasarea butonului Enter sau prin butonul de Shuffle; daca o cheie contine caractere ce nu sunt litere se va genera varianta default a patratului.
+Interfata lucreaza exclusiv cu fisiere: 
+
+- 'Choose file...' deschide un fisier si ii preia continutul, ce va fi afisat in caseta de text;
+- 'Encrypt text' cripteaza textul curent cu cifrul bifid, apoi cu substitutia monoalfabetica;
+- 'Decrypt text' decripteaza textul curent, intai cu substitutia monoalfabetica, apoi cu cifrul bifid;
+- 'Save file...' scrie textul curent intr-un fisier text si sterge textul curent;

@@ -1,0 +1,11 @@
+Generatorul Blum - Blum - Shub este un generator de numere pseudo-aleatoare ce are la baza parametrii:
+
+- p si q numere prime cu proprietatea ca p % 4 == 3 si q % 4 == 3;
+- n = p * q, numit intreg Blum;
+- x0 = un reziduu patratic modulo n, pe baza caruia definim secventa x(i + 1) = x(i) ** 2
+- suplimentar am adaugat parametrul size pentru limitarea memoriei secventei ce trebuie generata;
+
+Valorile implicite ale parametrilor sunt p = 7, q = 11, x0 = 2, respectiv size = 128 KB.
+Am ales KB ca unitate pentru memorie intrucat pentru MB timpul de rulare devine foarte mare (5-6 min pentru a genera 1MB iar interfata intra in not responding, dar functioneaza). Caseta de text admite totusi valori pana la 4 MB (adica 4096 KB).
+Pentru modificarea valorilor implicite se introduc valorile dorite si se apasa butonul 'Set values'. In cazul in care datele sunt incorecte, se va afisa un mesaj de eroare, iar parametrii nu vor fi actualizati.
+Dupa setarea parametrilor se apasa butonul Generate pentru generarea secventei, respectiv 'Save file...' pentru scrierea acesteia intr-un fisier.
